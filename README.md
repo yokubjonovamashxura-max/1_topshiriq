@@ -1,23 +1,22 @@
-# JS Blockchain Simulyatsiyasi (Task 5)
+# MedBlock: Poliklinika EHR va Blokcheyn Tizimi (Task 6)
 
-Ushbu loyiha JavaScript (Node.js) yordamida yaratilgan oddiy blokcheyn simulyatsiyasi. Loyiha bloklarni shifrlash (SHA-256), ularni bir-biriga bog'lash va "Zanjir Validatsiyasi" (Chain Validation) mantiqlarini namoyish etadi.
+Ushbu loyiha shifoxona va poliklinikalar uchun elektron tibbiy kartalarni (EHR) xavfsiz boshqarish tizimidir.
 
 ## 🚀 Xususiyatlari
-- **SHA-256 Hashing**: Node.js `crypto` moduli orqali har bir blok uchun takrorlanmas hash hisoblanadi.
-- **Genesis Block**: Zanjirning birinchi bloki avtomatik yaratiladi.
-- **Proof-of-Work (Mining)**: Blok qo'shish uchun ma'lum bir qiyinchilik darajasida (Difficulty) mining jarayoni bajariladi.
-- **Chain Integrity**: Zanjirning butunligini tekshirish funksiyasi mavjud. Agar biron bir blok ma'lumoti o'zgartirilsa, tizim buni darhol aniqlaydi.
+- **Elektron Tibbiy Karta**: Har bir bemorning tashxis va muolajalari blokcheynda saqlanadi.
+- **Ruxsatnomalar Boshqaruvi**: Bemorlar qaysi shifokor ularning ma'lumotlarini ko'rishi mumkinligini o'zi hal qiladi.
+- **Dori Haqiqiyligi**: Dorilarning seriya raqami orqali ularning haqiqiyligini tekshirish moduli.
+- **Audit Log**: Kim, qachon ma'lumot o'qigani yoki qo'shgani blokcheyn `event`lari orqali kuzatiladi.
+- **Role-based UI**: Bemor va Shifokor uchun alohida interfeyslar.
 
-## 🛠 Ishga tushirish
-Loyihani ishga tushirish uchun kompyuteringizda Node.js o'rnatilgan bo'lishi kerak.
-Terminalda quyidagi buyruqni bering:
-```bash
-node blockchain.js
-```
+## 🛠 Texnik qism
+- **Smart Contract**: Solidity (MedicalSystem.sol)
+- **Frontend**: React + Vite + Tailwind CSS
+- **Web3**: Wagmi + RainbowKit
 
-## 🏗 Arxitektura
-- `Block` klassi: Blok ma'lumotlarini va hash hisoblash funksiyasini saqlaydi.
-- `Blockchain` klassi: Butun zanjirni boshqaradi (blok qo'shish, mining qilish va validatsiya).
+## 🌐 Deploy
+Loyiha GitHub Pages va Sepolia Testnet-ga moslashtirilgan.
+👉 **Repository:** https://github.com/yokubjonovamashxura-max/6topshiriq
 
 ---
 *Created by Antigravity AI*
