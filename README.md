@@ -1,22 +1,21 @@
-# MedBlock: Poliklinika EHR va Blokcheyn Tizimi (Task 6)
+# SupplyChain: Blokcheyn Logistika Tizimi (Task 8)
 
-Ushbu loyiha shifoxona va poliklinikalar uchun elektron tibbiy kartalarni (EHR) xavfsiz boshqarish tizimidir.
+Ushbu loyiha mahsulotlarni ishlab chiqarishdan tortib iste'molchigacha kuzatib boruvchi shaffof ta'minot zanjiri tizimidir.
 
 ## 🚀 Xususiyatlari
-- **Elektron Tibbiy Karta**: Har bir bemorning tashxis va muolajalari blokcheynda saqlanadi.
-- **Ruxsatnomalar Boshqaruvi**: Bemorlar qaysi shifokor ularning ma'lumotlarini ko'rishi mumkinligini o'zi hal qiladi.
-- **Dori Haqiqiyligi**: Dorilarning seriya raqami orqali ularning haqiqiyligini tekshirish moduli.
-- **Audit Log**: Kim, qachon ma'lumot o'qigani yoki qo'shgani blokcheyn `event`lari orqali kuzatiladi.
-- **Role-based UI**: Bemor va Shifokor uchun alohida interfeyslar.
+- **Mahsulot Kiritish**: Ishlab chiqaruvchi yangi mahsulotni blokcheynga qo'shadi.
+- **Real-Vaqtda Kuzatish**: Mahsulotning qayerdaligi va holati (Status) blokcheynda saqlanadi.
+- **Egalikni O'tkazish**: Ishlab chiqaruvchidan distribyutorga orqali sotuvchiga o'tish jarayoni.
+- **Audit Trail**: Mahsulotning butun harakatlanish tarixi (Audit) shaffof ko'rinadi.
+- **Haqiqiylik Tasdig'i**: Har bir mahsulot blokcheyn orqali validatsiyadan o'tgan signature-ga ega.
 
 ## 🛠 Texnik qism
-- **Smart Contract**: Solidity (MedicalSystem.sol)
+- **Smart Contract**: Solidity (LogisticsSystem.sol)
 - **Frontend**: React + Vite + Tailwind CSS
 - **Web3**: Wagmi + RainbowKit
 
 ## 🌐 Deploy
-Loyiha GitHub Pages va Sepolia Testnet-ga moslashtirilgan.
-👉 **Repository:** https://github.com/yokubjonovamashxura-max/6topshiriq
+👉 **Repository:** https://github.com/yokubjonovamashxura-max/8topshiriq
 
 ---
 *Created by Antigravity AI*
