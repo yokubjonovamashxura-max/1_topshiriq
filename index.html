@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 DApp - Smart Kontrakt Integratsiyasi</title>
+    <meta name="description" content="Web3.js va Smart Kontraktlar bilan ishlash uchun premium DApp interfeysi">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Web3.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Web3<span>Connect</span></h1>
+            </div>
+            <button id="connectWallet" class="btn-primary">Hamyonni ulash</button>
+        </header>
+
+        <main>
+            <section class="status-card">
+                <div class="info-item">
+                    <span class="label">Hamyon manzili:</span>
+                    <span id="walletAddress" class="value">Ulanmagan</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Tarmoq:</span>
+                    <span id="networkName" class="value">-</span>
+                </div>
+            </section>
+
+            <div class="grid">
+                <!-- View Funksiyasi Bo'limi -->
+                <section class="card">
+                    <h2><i class="icon-read"></i> Ma'lumotni o'qish</h2>
+                    <p class="description">Kontraktdagi <code>storedData</code> qiymatini ko'rish (View funksiya).</p>
+                    <div class="result-box">
+                        <span id="storedValue" class="display-value">--</span>
+                    </div>
+                    <button id="readValue" class="btn-secondary">Ma'lumotni yangilash</button>
+                </section>
+
+                <!-- Tranzaksiya Yuborish Bo'limi -->
+                <section class="card">
+                    <h2><i class="icon-send"></i> Tranzaksiya yuborish</h2>
+                    <p class="description">Yangi qiymatni kontraktga yozish (Send metodi).</p>
+                    
+                    <div class="input-group">
+                        <label for="newValue">Yangi qiymat (raqam):</label>
+                        <input type="number" id="newValue" placeholder="Masalan: 42">
+                    </div>
+
+                    <div class="advanced-settings">
+                        <div class="input-group">
+                            <label for="gasLimit">Gas Limit:</label>
+                            <input type="number" id="gasLimit" value="100000">
+                        </div>
+                        <div class="input-group">
+                            <label for="gasPrice">Gas Price (Gwei):</label>
+                            <input type="number" id="gasPrice" value="20">
+                        </div>
+                    </div>
+
+                    <button id="sendValue" class="btn-primary-gradient">Yuborish</button>
+                </section>
+            </div>
+
+            <section class="log-section">
+                <h3>Konsol va Xatoliklar</h3>
+                <div id="logConsole" class="log-box">
+                    <p class="log-msg system">Tizim tayyor...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Web3 DApp Portfolio. Barcha huquqlar himoyalangan.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
